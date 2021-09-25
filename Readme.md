@@ -79,5 +79,7 @@ $ python manage.py runserver
 | [![Vivek Raj Singh](https://avatars.githubusercontent.com/u/43351728?v=4)](https://github.com/VRS-3999)    
 | <a href="https://github.com/VRS-3999" target="_blank">`Vivek Raj Singh`</a>
 
-
-                                                                                                                                                                                                                                                                        
+| <a href="https://github.com/jayant-prime" target="_blank">**Jayant Singh**</a>
+| :---: |
+| [![Jayant Singh](https://avatars.githubusercontent.com/u/56337066?v=4)](https://github.com/jayant-prime)    
+| <a href="https://github.com/jayant-prime" target="_blank">`Jayant Singh`</a>                                                                                                                                                                                           
