@@ -74,15 +74,10 @@ $ python manage.py runserver
 
 ## Team ✨
 
-| <a href="https://rajaprerak.github.io" target="_blank">**Prerak Raja**</a>
+| <a href="https://github.com/VRS-3999" target="_blank">**Vivek Raj Singh**</a>
 | :---: |
-| [![Prerak Raja](https://github.com/rajaprerak.png?size=100)](https://rajaprerak.github.io)    
-| <a href="https://github.com/rajaprerak" target="_blank">`github.com/rajaprerak`</a>
+| [![Vivek Raj Singh](https://avatars.githubusercontent.com/u/43351728?v=4)](https://github.com/VRS-3999)    
+| <a href="https://github.com/VRS-3999" target="_blank">`Vivek Raj Singh`</a>
 
-
-## License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
                                                                                                                                                                                                                                                                         
