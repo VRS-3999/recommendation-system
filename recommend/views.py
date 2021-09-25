@@ -119,8 +119,13 @@ def recommend(request):
 
     movie_rating=pd.DataFrame(list(Myrating.objects.all().values()))
 
+    print("=====RECOMMEND INFO======")
+    print(movie_rating)
+
     new_user=movie_rating.user_id.unique().shape[0]
+    print(new_user)
     current_user_id= request.user.id
+    print(current_user_id)
 	# if new user not rated any movie
     if current_user_id>new_user:
         movie=Movie.objects.get(id=19)
@@ -133,13 +138,16 @@ def recommend(request):
     corrMatrix = userRatings.corr(method='pearson')
 
     user = pd.DataFrame(list(Myrating.objects.filter(user=request.user).values())).drop(['user_id','id'],axis=1)
+    print("=====USER INFO=======")
+    print(user)
     user_filtered = [tuple(x) for x in user.values]
     movie_id_watched = [each[0] for each in user_filtered]
 
     similar_movies = pd.DataFrame()
     for movie,rating in user_filtered:
         similar_movies = similar_movies.append(get_similar(movie,rating,corrMatrix),ignore_index = True)
-
+    print("=====SIMILARITY INFO=======")
+    print(similar_movies)
     movies_id = list(similar_movies.sum().sort_values(ascending=False).index)
     movies_id_recommend = [each for each in movies_id if each not in movie_id_watched]
     preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(movies_id_recommend)])
